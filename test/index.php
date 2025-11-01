@@ -8,7 +8,8 @@
 <body>
     <h1>welcome to php</h1>
     <?php
-       print "Hello world";
+       print "Hello world"; 
+       phpinfo();
         ?>
         
 </body>
