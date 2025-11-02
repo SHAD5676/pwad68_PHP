@@ -7,10 +7,6 @@
     <title>Home Page</title>
 </head>
 
-<?php 
-$a = $_SERVER['PHP_SELF']; 
-
-?>
 <body>
 
 <!--Menubar-->
