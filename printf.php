@@ -1,11 +1,17 @@
-<?php
+<?php 
 
-printf("my name is %s","Shad");
-echo "<br";
+$name = "shad";
+$age = 20;
 
-printf("my name is %s","Shad");
-echo "<br";
+printf("my name is %s and I am %d years old." , $name, $age)
 
-printf("my name is %s","Shad");
-echo "<br";
+?>
 
+<hr>
+
+<?php 
+
+$price = 50;
+printf("the price is %.2f tk." , $price)
+
+?>
