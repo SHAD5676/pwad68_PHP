@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>File Upload</title>
 </head>
-
 <body>
     <h3>File Upload using PHP Procedural Coding</h3>
 
@@ -20,7 +18,7 @@
 
         $ext = strtolower(pathinfo($filename, PATHINFO_EXTENSION));
         $allowedTypes = ["jpg", "jpeg", "png"];
-        $errors = array();
+        $errors = [];
 
         // Check file size
         if ($FileSize > $maxSize) {
@@ -32,7 +30,7 @@
             $errors[] = "<h1>Only JPG, JPEG, and PNG files are allowed</h1>";
         }
 
-        // If no errors, move file
+        // move file
         if (count($errors) > 0) {
             foreach ($errors as $error) {
                 echo $error . "<br>";
@@ -52,5 +50,4 @@
         <input type="submit" value="UPLOAD" name="upload">
     </form>
 </body>
-
 </html>
