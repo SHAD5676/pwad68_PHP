@@ -30,7 +30,7 @@ if($db->affected_rows){
     <form action="" method="post">
         <input type="text" name="fname" placeholder="Enter First Name"><br>
         <input type="text" name="lname" placeholder="Enter Last Name"><br>
-        <input type="date" name="dob" placeholder="Enter First Name"><br>
+        <input type="date" name="dob" placeholder="Enter date"><br>
         <textarea name="notes" placeholder="Enter Notes"></textarea><br>
         <input type="submit" name="submit" value="SUBMIT">
     </form>
