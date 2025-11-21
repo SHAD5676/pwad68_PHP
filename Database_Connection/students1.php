@@ -44,9 +44,10 @@ $result = $db->query($sql);
             <td>First Name</td>
             <td>Last Name</td>
             <td>Birth Date</td>
+            <th colspan="2">Action</th>
         </tr>
         <?php
-        while ($row = $result->fetch_object()){;
+        while ($row = $result->fetch_object()){
         ?>
 
         <tr>
@@ -54,8 +55,12 @@ $result = $db->query($sql);
             <td><?php echo $row->first_name; ?></td>
             <td><?php echo $row->last_name; ?></td>
             <td><?php echo $row->birthdate; ?></td>
+            <td><a href="student_edit.php?id=<?php echo $row->employeeID ?>">Edit</a></td>
+            <td><a onclick="return confirm('Are you sure you want to delete')" href="student_delete.php?id=<?php echo $row->employeeID ?>">Delete</a> </td>
+            
         </tr>
-        <?php } ?>
+        <?php }; 
+        ?>
     </table>
      <a href="student_entry.php">Student Entry</a>
 
