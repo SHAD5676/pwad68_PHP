@@ -12,14 +12,16 @@
         <input type="submit" name="submit" value="CHECK"> <br><br>
         
     </form>
- <?php 
+
+    <?php
     if(isset($_REQUEST["submit"])){
         extract($_REQUEST);
         if($num == 1){
-            echo "It's not a prime number";
+            echo "$num is not a prime number";
+
         }
-        if($num == 2){
-            echo "It's a prime number";
+        if($num ==2){
+            echo "$num is a prime number";
         }
         if($num > 2){
             for($i = 2; $i < $num; $i++){
@@ -27,14 +29,17 @@
                     echo "It's not a prime number";
                     exit();
                 }
-                
-            }
-            echo "It's a prime number";
+            } 
+            echo "It's a prime number.";
         }
     }
-    
-    ?>
 
+
+
+
+?>
+
+   
 
 </body>
 </html>
